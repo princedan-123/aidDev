@@ -1,3 +1,5 @@
 # ignore swap files from Vim
 
 *.swp
+__pycahe__/
+*.pyc
