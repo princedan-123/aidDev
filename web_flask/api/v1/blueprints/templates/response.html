@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recomendations</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a>Home</a>
+        </nav>
+    </header>
+    <section>
+        <figure>
+            {% for video in videos.values() %}
+                <img src="{{ video.get('thumbnail', '') }}" alt="thumbnail" width="120">
+                <figcaption><a href="{{ video.get('video_url', '') }}">{{ video.get('title', '') }}</a></figcaption>
+            {% endfor %}
+        </figure>
+
+    </section>
+    <footer>
+        <nav>
+            <a>Contact us:</a>
+        </nav>
+    </footer>
+    
+</body>
+</html>
