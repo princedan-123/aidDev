@@ -2,9 +2,10 @@
 from flask import Blueprint
 from googleapiclient.discovery import build
 from flask import render_template
+import uuid
 import os
 
-youtube_api = Blueprint('youtube_api', __name__, template_folder='templates')
+youtube_api = Blueprint('youtube_api', __name__, template_folder='templates', static_folder='static')
 
 @youtube_api.route('/videos', strict_slashes=False)
 def search_videos():
@@ -30,7 +31,8 @@ def search_videos():
                 }
             key = f'v{item}'
             videos[key] = video
-        return render_template('response.html', videos=videos)
+        version = str(uuid.uuid4())
+        return render_template('response.html', videos=videos, version=version)
     except Exception as e:
         print("an error occured", e)
     finally:

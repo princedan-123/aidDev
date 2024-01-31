@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='blueprint_static/css/response.css') }}?v={{ version }}">
     <title>recomendations</title>
 </head>
 <body>
@@ -12,10 +13,13 @@
         </nav>
     </header>
     <section>
-        <figure>
+        <header class="header"><h3> Recommended Videos </h3></header>
+        <figure class="image_container">
             {% for video in videos.values() %}
-                <img src="{{ video.get('thumbnail', '') }}" alt="thumbnail" width="120">
+            <div class="image_item">
+	            <a href="{{ video.get('video_url', '') }}"><img src="{{ video.get('thumbnail', '') }}" alt="thumbnail" width="120" title="{{ video.get('description', '') }}"></a>
                 <figcaption><a href="{{ video.get('video_url', '') }}">{{ video.get('title', '') }}</a></figcaption>
+            </div>
             {% endfor %}
         </figure>
 
