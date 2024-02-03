@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+
+        </nav>
+    </header>
+    <section class="form">
+        <form action="{{ url_for('homepage') }}", method="post">
+            <fieldset>
+                <legend>Search</legend>
+                {{ form.csrf_token }}
+                {{ form.search.label}} {{ form.search }}
+                {{ form.content.label }} {{form.content }}
+                {{ form.submit }}
+            </fieldset>
+
+        </form>
+
+    </section>
+    <footer>
+
+    </footer>
+</body>
+</html>

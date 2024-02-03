@@ -17,14 +17,14 @@
         <figure class="image_container">
             {% for video in videos.values() %}
             <div class="image_item">
-	            <a href="{{ video.get('video_url', '') }}"><img src="{{ video.get('thumbnail', '') }}" alt="thumbnail" width="120" title="{{ video.get('description', '') }}"></a>
-                <figcaption><a href="{{ video.get('video_url', '') }}">{{ video.get('title', '') }}</a></figcaption>
+	            <a href="{{ video.get('video_url', '') }}"><img src="{{ video.get('thumbnail', '') }}" alt="thumbnail" width="120" height="90" title="{{ video.get('description', '') }}"></a>
+                <figcaption class="caption"><a href="{{ video.get('video_url', '') }}">{{ video.get('title', '') }}</a></figcaption>
             </div>
             {% endfor %}
         </figure>
 
     </section>
-    <footer>
+    <footer class="footer">
         <nav>
             <a>Contact us:</a>
         </nav>

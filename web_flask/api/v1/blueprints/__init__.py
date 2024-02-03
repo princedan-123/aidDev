@@ -1,5 +1,6 @@
 """Blueprints for various apis to be implemented."""
 from flask import Blueprint
+from flask import request
 from googleapiclient.discovery import build
 from flask import render_template
 import uuid
@@ -7,16 +8,17 @@ import os
 
 youtube_api = Blueprint('youtube_api', __name__, template_folder='templates', static_folder='static')
 
-@youtube_api.route('/videos', strict_slashes=False)
+@youtube_api.route('/videos', methods=['GET'], strict_slashes=False)
 def search_videos():
-    api_key = os.getenv('google_api_key')
+    query = request.args.get('search_query')
+    api_key = os.getenv('google_api_key_two')
     youtube_client = build('youtube', 'v3', developerKey=api_key)
-    request = youtube_client.search().list(
-            part='snippet', maxResults=10, q='variable',
+    client_request = youtube_client.search().list(
+            part='snippet', maxResults=10, q=f'{query}',
             type='video', topicId="/m/07c1v"
             )
     try:
-        result = request.execute()
+        result = client_request.execute()
         size = len(result.get('items', []))
         videos = {}
         for item in range(0, size):
