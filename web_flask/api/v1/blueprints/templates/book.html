@@ -1,0 +1,17 @@
+{% extends 'response.html' %}
+{% block link %}
+	<link rel="stylesheet" href="{{ url_for('static', filename='blueprint_static/css/response.css') }}?v={{ version }}"
+{% endblock %}
+{% block content %}
+<section>
+	<header class="header"><h3> Recommended Books </h3></header>
+	<figure class="image_container">
+		{% for book in books.values() %}
+		<div class="image_item">
+			<a href="{{ book.get('preview', '') }}" target="_blank"><img src="{{ book.get('thumbnail', '') }}" alt="book thumbnail" width="120" height="90" title="{{ book.get('description', '') }}"></a>
+			<figcaption class="caption"><a href="{{ book.get('preview', '') }}">{{ book.get('title', '') }} by {{ book.get("authors", "") }}</a></figcaption>
+		</div>
+		{% endfor %}
+	</figure>
+</section>
+{% endblock %}
