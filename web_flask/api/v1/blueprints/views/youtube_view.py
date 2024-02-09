@@ -9,6 +9,9 @@ import os
 @youtube_api.route('/videos', methods=['GET'], strict_slashes=False)
 def search_videos():
     query = request.args.get('search_query')
+    #  check for injection
+    if ';' in query:
+        query = query.replace(';', '')
     api_key = os.getenv('google_api_key_two')
     youtube_client = build('youtube', 'v3', developerKey=api_key)
     client_request = youtube_client.search().list(
@@ -32,7 +35,7 @@ def search_videos():
             key = f'v{item}'
             videos[key] = video
         version = str(uuid.uuid4())
-        return render_template('response.html', videos=videos, version=version)
+        return render_template('response.html', videos=videos, version=version, search_query=query)
     except Exception as e:
         print("an error occured", e)
     finally:

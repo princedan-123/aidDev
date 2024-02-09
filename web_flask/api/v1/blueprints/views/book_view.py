@@ -12,6 +12,9 @@ def book_search():
     api_key = os.getenv('book_api')
     try:
         search_query = request.args.get('search_query', '')
+        #  checking for injection
+        if ';' in search_query:
+            search_query = search_query.replace(';', '')
         book_service = build('books', 'v1', developerKey=api_key)
         search_request = book_service.volumes().list(
                 q=f'{search_query} in computer, software development,\
@@ -41,7 +44,7 @@ def book_search():
             key = f'book{item}'
             books[key] = book
             version = str(uuid.uuid4())
-        return render_template('book.html', books=books, version=version)
+        return render_template('book.html', books=books, version=version, search_query=search_query)
     except Exception as e:
         print('An error occured', e)
     finally:
