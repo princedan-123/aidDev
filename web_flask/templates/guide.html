@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guide</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/guide_header.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/guide_body.css')}}">
+</head>
+<body>
+    <header class="navbar">
+        <nav class="nav_item"><a href="{{ url_for('homepage') }}">Home</a></nav>
+    </header>
+    <section>
+        <p>This is an open source portfolio project that aims to recommend public materials (videos, books, articles) to software developers. The recommended materials are tailored towards programming, coding, software development.
+        </p>
+        <h3> How to use the project</h3>
+        <p>
+            In the landing page of the project, there is a search box. Enter your search query in the search box, then select the type of material you want to be recommended from the drop down select menu. Please note that by default video is selected. Then click on the recommended button.
+        </p>
+        <p>
+            In order for you to get the best out of this project, you should take note of the following points.
+        </p>
+        <ul>
+            <li>
+                The project is software oriented hence it was programed to recommend software engineering content.
+            </li>
+            <li>
+                Your search query should be specific and limited to coding or software development
+            </li>
+            <li>
+                Your keyword matters, the more descriptive it is the better the search result. For example <q>what is function in python and how to use it</q>. This search keyword is better compared to <q>functions</q>
+            </li>
+            <li>
+                At the moment the project just uses Google APIs to recommend matrials, the materials are not provided by the authors of the project.
+            </li>
+            <li>
+                It should also be noted that although Google APIs are free, it is quota based. Each time you enter a search query you are using from the allocated quota and if it is exceeded, you may get an error message.
+            </li>
+        </ul>
+    </section>
+</body>
+</html>

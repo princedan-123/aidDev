@@ -1,0 +1,24 @@
+{% extends 'response.html' %}
+<link rel="stylesheet" href="{{ url_for('static', filename='blueprint_static/css/response.css') }}?v={{ version }}"
+{% block navigation %}
+	<header>
+		<nav class="navbar">
+			<a href="{{ url_for('homepage') }}" class=" nav_item">Home</a>
+			<a href="{{ url_for('youtube_api.search_videos', search_query=search_query)}}" class="nav_item">Videos</a>
+			<a href="{{ url_for('guide') }}" class="nav_item">Guide</a>
+		</nav>
+	</header>
+{% endblock %}
+{% block content %}
+<section>
+	<header class="header"><h3> Recommended Books </h3></header>
+	<figure class="image_container">
+		{% for book in books.values() %}
+		<div class="image_item">
+			<a href="{{ book.get('preview', '') }}" target="_blank"><img src="{{ book.get('thumbnail', '') }}" alt="book thumbnail" width="120" height="90" title="{{ book.get('description', '') }}"></a>
+			<figcaption class="caption"><a href="{{ book.get('preview', '') }}">{{ book.get('title', '') }} by {{ book.get("authors", "") }}</a></figcaption>
+		</div>
+		{% endfor %}
+	</figure>
+</section>
+{% endblock %}

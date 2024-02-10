@@ -1,0 +1,23 @@
+/* reset */
+body{
+    box-sizing:border-box; margin: 0; border: 0; padding: 0;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    background-color: #3C2F80;
+}
+.nav_item{
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    color: #AEE8CA;
+}
