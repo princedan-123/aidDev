@@ -1,6 +1,13 @@
 {% extends 'response.html' %}
-{% block link %}
-	<link rel="stylesheet" href="{{ url_for('static', filename='blueprint_static/css/response.css') }}?v={{ version }}"
+<link rel="stylesheet" href="{{ url_for('static', filename='blueprint_static/css/response.css') }}?v={{ version }}"
+{% block navigation %}
+	<header>
+		<nav class="navbar">
+			<a href="{{ url_for('homepage') }}" class=" nav_item">Home</a>
+			<a href="{{ url_for('youtube_api.search_videos', search_query=search_query)}}" class="nav_item">Videos</a>
+			<a href="{{ url_for('guide') }}" class="nav_item">Guide</a>
+		</nav>
+	</header>
 {% endblock %}
 {% block content %}
 <section>

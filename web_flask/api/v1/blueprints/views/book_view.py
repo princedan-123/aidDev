@@ -36,6 +36,9 @@ def book_search():
             description = data[item].get('volumeInfo', {}).get('description', '')
             thumbnail = data[item].get('volumeInfo', {}).get('imageLinks', {}).get('smallThumbnail', '')
             preview_link = data[item].get('volumeInfo', {}).get('previewLink', '')
+            if len(book_title) > 25:
+                edit_title = book_title[0:26]
+                book_title = f'{edit_title}...'
             book = {
                 'id': book_id, 'title': book_title, 'authors': book_authors,
                 'publisher': publisher, 'description': description,

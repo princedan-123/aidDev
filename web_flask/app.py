@@ -27,4 +27,21 @@ def homepage():
             return redirect(url_for('book_api.book_search', search_query=data))
     return render_template('index.html', form=form)
 
+@app.route('/guide', strict_slashes=False)
+def guide():
+    """A route for guide template which describes how to use
+        the project.
+    """
+    return render_template('guide.html')
+
+@app.errorhandler(404)
+def not_found_error(error):
+    """A custom error handler for 404 not found."""
+    render_template('error_404.html')
+
+@app.errorhandler(500)
+def server_side_error(error):
+    """A custom error for 500 error."""
+    render_template('error_500.html')
+
 app.run(host="localhost", port=5000, debug=True)
