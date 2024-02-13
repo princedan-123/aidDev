@@ -1,3 +1,68 @@
-.form {
+/* minimal CSS reset */
+body {
+    box-sizing: border-box;
+    padding: 0px; margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    text-decoration: none;
+    color: #3C2F80
+}
+/* styling */
+.button {
+    border: 2px solid #3C2F80;
+    border-radius: 10px;
+    padding:5px;
+}
+.button:hover{
+    background-color: gray;
+}
+.navigation{
     display: flex;
+    justify-content: space-evenly;
+    background-color:#3C2F80;
+    color: white;
+    flex-flow: row wrap;
+}
+.nav_item{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+.introduction{
+    margin: 20px;
+    padding: 10px;
+}
+.introductory_image{
+    display: flex;
+    justify-content: space-around;
+}
+#landing_image{
+    max-width: 100vw;
+}
+.description{
+    text-align: center;
+}
+.features{
+    display: flex;
+    justify-content: space-around;
+}
+.video{
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+.book{
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+figcaption{
+    margin: 5px;
+    padding: 10px;
+    font-family: cursive;
+}
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+    padding: 10px;
 }
