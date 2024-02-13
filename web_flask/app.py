@@ -34,14 +34,16 @@ def guide():
     """
     return render_template('guide.html')
 
-@app.errorhandler(404)
-def not_found_error(error):
-    """A custom error handler for 404 not found."""
-    render_template('error_404.html')
+@app.route('/authors', strict_slashes=False)
+def authors():
+    """A route for authors template which gives info about the
+        authors of the project.
+    """
+    return render_template('authors.html')
 
-@app.errorhandler(500)
-def server_side_error(error):
-    """A custom error for 500 error."""
-    render_template('error_500.html')
+@app.route('/story', strict_slashes=False)
+def story():
+    """A route for the story template."""
+    return render_template('story.html')
 
 app.run(host="localhost", port=5000, debug=True)
