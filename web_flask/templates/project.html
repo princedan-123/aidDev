@@ -14,7 +14,7 @@
         </nav>
     </header>
     <section class="form">
-        <form action="{{ url_for('homepage') }}", method="post">
+        <form action="{{ url_for('query') }}", method="post">
             <fieldset>
                 <legend>Search</legend>
                 {{ form.csrf_token }}
