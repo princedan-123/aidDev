@@ -2,13 +2,16 @@
 
 # A bash scripts that installs necessary dependencies
 
+# install pip for python3
+sudo apt install python3-pip
+
 # install google api client
-pip install google-api-python-client;
+sudo pip install google-api-python-client;
 
 # install python flask framework
-pip install Flask;
+sudo pip install Flask;
 
 # install wtf flask extension
-pip install Flask-WTF;
+sudo pip install Flask-WTF;
 # install Gunicorn
-pip install gunicorn;
+sudo pip install gunicorn;
