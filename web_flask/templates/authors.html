@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>authors</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/authors.css')}}">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="{{url_for('homepage')}}" class="home">Home</a>
+        </nav>
+    </header>
+    <section>
+        <h1>Authors</h1>
+        <p>
+            The portfolio project was birthed by the following aspiring software engineers who at the time of publication of this project were students of ALX Software engineering program
+        </p>
+        <h2>  Daniel Ebuka Mabia  </h2>
+        <figure>
+            <img src="{{url_for('static', filename='images/authors.jpg')}}" alt="An image of Daniel, one of the authors of the project" class="author_image">
+        </figure>
+        <nav class="author_nav">
+            <nav><a href="https://twitter.com/Daniel__Mabia" class="button">twitter</a></nav>
+            <nav><a href="https://github.com/princedan-123" class="button">github</a></nav>
+            <nav><a href="https://www.linkedin.com/in/daniel-mabia" class="button">LinkedIn</a></nav>
+            <nav><a href="mailto:danielebukamabia@gmail.com" class="button">mail</a></nav>
+        </nav>
+        <p>He contributed to the api implementation, backend flask frame work and frontend templates</p>
+        <h2> Nathaniel Udoh</h2>
+    </section>
+</body>
+</html>
