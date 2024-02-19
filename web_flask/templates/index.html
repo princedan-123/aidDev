@@ -8,13 +8,14 @@
 </head>
 <body>
     <header class="navigation">
-        <nav class="nav_item">Guide</nav>        
-        <nav class="nav_item">References</nav>
+	    <nav class="nav_item"><a href="{{ url_for('guide') }}" class="nav_link">Guide</a></nav>        
+	    <nav class="nav_item"><a class="nav_link" href="https://github.com/princedan-123/aidDev"> Repository<a/></nav>
+	    <nav class="nav_item"><a href="{{url_for('query')}}" class="nav_link">Recommend</nav>
     </header>
     <section class="introduction">
         <section class="introductory_image">
-            <figure id="landing_image">
-                <img src="{{ url_for('static', filename='images/introductory_image.jpg') }}" alt="An introductory image">
+            <figure>
+                <img id="landing_image" src="{{ url_for('static', filename='images/introductory_image.jpg') }}" alt="An introductory image">
                 <p> <a href="https://mattbango.photo/">photo credit: By Matt Bango</a></p>
             </figure>
         </section>
