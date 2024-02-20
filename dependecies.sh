@@ -13,5 +13,3 @@ sudo pip install Flask;
 
 # install wtf flask extension
 sudo pip install Flask-WTF;
-# install Gunicorn
-sudo pip install gunicorn;
