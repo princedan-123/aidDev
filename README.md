@@ -4,7 +4,7 @@ An open source portfolio project that recommends educational materials to aspiri
 
 INTRODUCTION
 
-This is an open source portfolio project that aims to recommend study materials such as videos and books to software engineering student, thisapplication serve as a recommendation system tailored made for software engineering students and professionals as well as other areas of specialization within the field of computer science.
+This is an open source portfolio project that aims to recommend study materials such as videos and books to software engineering student, this application serve as a recommendation system tailored made for software engineering students and professionals as well as other areas of specialization within the field of computer science.
 A link to the deployed site: http://aid.jarheads.tech
 Link to a comprehensive project blog post: 
 
