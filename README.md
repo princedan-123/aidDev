@@ -5,7 +5,7 @@ An open source portfolio project that recommends educational materials to aspiri
 INTRODUCTION
 
 This is an open source portfolio project that aims to recommend study materials such as videos and books to software engineering student, this application serve as a recommendation system tailored made for software engineering students and professionals as well as other areas of specialization within the field of computer science.
-A link to the deployed site: http://aid.jarheads.tech
+A link to the deployed site: http://aid.jarheads.tech.
 Link to a comprehensive project blog post: 
 
 INSTALLATION
@@ -51,7 +51,7 @@ There is no license currently
 
 CONTACT
 
-Nathaniel Ndoh - http://www.linkedin.com/in/nathaniel-ndoh-0323a4248 & github N-athanieli
+Nathaniel Ndoh - http://www.linkedin.com/in/nathaniel-ndoh-0323a4248 & github N-athaniel
 
 Daniel Mabia -
 
@@ -59,7 +59,7 @@ ACKNOWLEDGMENT
 
 Here are some resources I find helpful and would like to give them credit.
 
-Official Flask documentation
-Jinja2 documentation
-Bootstrap official documentation
-Stack overflow documentation  
+Official Flask documentation.
+Jinja2 documentation.
+Bootstrap official documentation.
+Stack overflow documentation.
