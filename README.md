@@ -53,13 +53,17 @@ CONTACT
 
 Nathaniel Ndoh - http://www.linkedin.com/in/nathaniel-ndoh-0323a4248 & github N-athaniel
 
-Daniel Mabia -
+Daniel Mabia - <a href="https://www.linkedin.com/in/daniel-mabia">LinkedIn</a> & <a href="https://github.com/princedan-123">Github</a>
 
 ACKNOWLEDGMENT
 
 Here are some resources I find helpful and would like to give them credit.
-
-Official Flask documentation
-Jinja2 documentation
+<ul>
+<li><a href="https://developers.google.com/books/docs/v1/using">Google Book API Documentation </a></li>
+<li><a href="https://developers.google.com/youtube/v3">Youtube Data API </a></li>
+<li><a href="https://flask.palletsprojects.com/en/3.0.x/">Flask documentation</a></li>
+<li><a href="https://flask-wtf.readthedocs.io/en/1.2.x/"> Flask WTF Extension Documentation</a></li>
+<li><a href="https://jinja.palletsprojects.com/en/3.1.x/">Jinja2 documentation</a></li>
 Bootstrap official documentation
-Stack overflow documentation  
+Stack overflow documentation
+</ul>
