@@ -11,6 +11,11 @@
 		<nav class="nav_item"><a href="{{url_for('guide')}}" class="nav_link">Guide</a></nav>
 		<nav class="nav_item"><a href="{{url_for('homepage')}}" class="nav_link">Home</a></nav>
 	</header>
+    <section class="search_image">
+        <figure>
+            <img src="{{url_for('static', filename='images/search_logo.png')}}" alt="A logo" width="500">
+        </figure>
+    </section>
 
     <section class="form">
         <form action="{{ url_for('query') }}" method="post" class="user_query">
