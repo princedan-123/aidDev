@@ -51,7 +51,7 @@ There is no license currently
 
 CONTACT
 
-Nathaniel Ndoh - http://www.linkedin.com/in/nathaniel-ndoh-0323a4248/github N-athaniel
+Nathaniel Ndoh - http://www.linkedin.com/in/nathaniel-ndoh-0323a4248 & github N-athanieli
 
 Daniel Mabia -
 
