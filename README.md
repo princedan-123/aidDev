@@ -10,15 +10,14 @@ Link to a comprehensive project blog post:
 
 INSTALLATION
 
-The following are instructions on how to install and setup the app, the app rely on pyhton flask framework tools and all the necessary flask extentions including external dependencies or services.
+The following are instructions on how to install and setup the app, the app rely on python flask framework tools and all the necessary flask extentions including external dependencies or services.
+<ol>
+<li>Get a free API key (Google cloud)</li>
+<li>For security reasons, save your key as an evironmental variable using this name 'google_api_key' in your config file 
+<li>Clone the repo</li>
 
-1. Get a free API key (Google cloud)
-
-2. Clone the repo
-
-3. Install flask packages
-  
-4. Enter your API key in a config file
+<li>Install the neccessary packages by simply running the dependecies.sh script if you are using Linux or you meay install them manually</li>
+</ol>
 
 USAGE
 
@@ -64,6 +63,4 @@ Here are some resources I find helpful and would like to give them credit.
 <li><a href="https://flask.palletsprojects.com/en/3.0.x/">Flask documentation</a></li>
 <li><a href="https://flask-wtf.readthedocs.io/en/1.2.x/"> Flask WTF Extension Documentation</a></li>
 <li><a href="https://jinja.palletsprojects.com/en/3.1.x/">Jinja2 documentation</a></li>
-Bootstrap official documentation
-Stack overflow documentation
 </ul>
