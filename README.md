@@ -16,7 +16,7 @@ The following are instructions on how to install and setup the app, the app rely
 <li>For security reasons, save your key as an evironmental variable using this name 'google_api_key' in your config file 
 <li>Clone the repo</li>
 
-<li>Install the neccessary packages by simply running the dependecies.sh script if you are using Linux or you meay install them manually</li>
+<li>Install the neccessary packages by simply running the dependecies.sh script if you are using Linux or you may install them manually</li>
 </ol>
 
 USAGE
