@@ -6,7 +6,7 @@ INTRODUCTION
 
 This is an open-source portfolio project that aims to recommend study materials such as videos and books to software engineering students, this application serves as a recommendation system tailored for software engineering students and professionals as well as other areas of specialization within the field of computer science.
 A link to the deployed site: http://aid.jarheads.tech
-Link to a comprehensive project blog post: 
+Link to a comprehensive project blog post: https://www.linkedin.com/pulse/aiddev-nathaniel-ndoh-evzrf  
 
 INSTALLATION
 
@@ -51,7 +51,7 @@ There is no license currently
 
 CONTACT
 
-Nathaniel Ndoh - http://www.linkedin.com/in/nathaniel-ndoh-0323a4248 & github N-athaniel
+Nathaniel Ndoh - <a href="http://www.linkedin.com/in/nathaniel-ndoh-0323a4248">Linkedin</a> & <a href="https://github.com/N-athaniel">Github</a>
 
 Daniel Mabia - <a href="https://www.linkedin.com/in/daniel-mabia">LinkedIn</a> & <a href="https://github.com/princedan-123">Github</a>
 
