@@ -13,3 +13,6 @@ sudo pip install Flask;
 
 # install wtf flask extension
 sudo pip install Flask-WTF;
+
+# install dotenv module for environment variable
+pip install python-dotenv

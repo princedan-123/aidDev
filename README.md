@@ -13,7 +13,8 @@ INSTALLATION
 The following are instructions on how to install and set up the app, the app relies on Python Flask framework tools and all the necessary Flask extensions including external dependencies or services.
 <ol>
 <li>Get a free API key (Google Cloud)</li>
-<li>For security reasons, save your key as an environment variable using this name 'google_api_key' in your config file 
+<li>For security reasons, save your key as an environment variable using this name 'google_api_key' in ".env" file at the root of the project directory</li>
+<li>The environment variable should be saved in a key value format for example google_api_key='sdjdaldladhahdaldheal6743' 
 <li>Clone the repo</li>
 
 <li>Install the necessary packages by simply running the dependencies.sh script if you are using Linux or you may install them manually</li>
