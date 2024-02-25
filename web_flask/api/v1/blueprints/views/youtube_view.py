@@ -9,7 +9,6 @@ import os
 @youtube_api.route('/videos', methods=['GET'], strict_slashes=False)
 def search_videos():
     query = request.args.get('search_query')
-    #api_key = 'AIzaSyCXftJseVqw19zCPe0nZi3rgc8UvYBwo9o'
     api_key = os.getenv('google_api_key_two')
     youtube_client = build('youtube', 'v3', developerKey=api_key)
     client_request = youtube_client.search().list(
