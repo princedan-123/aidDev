@@ -9,10 +9,8 @@ import os
 @youtube_api.route('/videos', methods=['GET'], strict_slashes=False)
 def search_videos():
     query = request.args.get('search_query')
-    #  check for injection
-    if ';' in query:
-        query = query.replace(';', '')
-    api_key = os.getenv('google_api_key')
+    #api_key = 'AIzaSyCXftJseVqw19zCPe0nZi3rgc8UvYBwo9o'
+    api_key = os.getenv('google_api_key_two')
     youtube_client = build('youtube', 'v3', developerKey=api_key)
     client_request = youtube_client.search().list(
             part='snippet', maxResults=10, q=f'{query}',

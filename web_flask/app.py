@@ -6,6 +6,7 @@ import secrets
 from index_form import QueryForm
 from api.v1.blueprints import youtube_api
 from api.v1.blueprints import book_api
+from dotenv import load_dotenv
 
 app = Flask(__name__)
 # creating a key for CSRF
@@ -13,6 +14,7 @@ secret_key = secrets.token_urlsafe(16)
 app.secret_key = secret_key
 app.register_blueprint(youtube_api)
 app.register_blueprint(book_api)
+load_dotenv()
 
 @app.route('/', strict_slashes=False)
 def homepage():
@@ -23,7 +25,7 @@ def homepage():
 def query():
     """A route to collect users query."""
     form = QueryForm()
-    if form.validate_on_submit():
+    if request.method == 'POST':
         data = form.search.data
         content_type = form.content.data
         if content_type == 'video':
@@ -50,5 +52,5 @@ def authors():
 def story():
     """A route for the story template."""
     return render_template('story.html')
-
-# app.run(host="localhost", port=5000, debug=True)
+if __name__ == '__main__':
+    app.run()

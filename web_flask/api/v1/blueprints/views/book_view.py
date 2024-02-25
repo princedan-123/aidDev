@@ -12,9 +12,6 @@ def book_search():
     api_key = os.getenv('book_api')
     try:
         search_query = request.args.get('search_query', '')
-        #  checking for injection
-        if ';' in search_query:
-            search_query = search_query.replace(';', '')
         book_service = build('books', 'v1', developerKey=api_key)
         search_request = book_service.volumes().list(
                 q=f'{search_query} in computer, software development,\
